@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DailyHunt Lite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/universal.css" />
+<link rel="stylesheet" href="css/sprite.css" />
+<link rel="stylesheet" href="css/others.css" />
+<link rel="stylesheet" href="css/loading.css" />
+<link rel="stylesheet" href="css/list-viw.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/clear.css" />
+<link rel="stylesheet" href="css/animation.css" />
+<link rel="stylesheet" href="css/popup.css" />
+</head>
+
+<body onload="ripple();" onclick="addClassBody()" id="bodySize" >
+<div class="popup" id="popup" style="display:none;">
+	<div class="inr">
+		<h4 id="fontMod">font size selection</h4>
+
+		<div class="size">
+			<div class="txt">
+				<div class="lhs"><span>Aa</span></div>
+				<div class="rhs"><span>Aa</span></div>
+			</div>
+			<div class="line" id="line">
+				<div class="pipe styI"><span></span></div>
+				<div class="pipe styII"><span class="active"></span></div>
+				<div class="pipe styIII"><span></span></div>
+
+				<div class="st2"></div>
+				<div class="st3" style="display:none"></div>
+			</div>
+		</div>
+		<div class="action">
+			<a href="javaScript:void(0)" onclick="closeBtn()" class="btn_close">Close</a>
+			<a href="javaScript:void(0)" class="btn_save" onclick="save()">Save</a>
+		</div>
+	</div>
+</div>
+
+<header class="dtls">
+	<div class="details_hd">
+		<div class="lhs">
+			<ul>
+				<li><a href="javaScript:void(0);" class="m_sprite btn_bk"></a></li>
+			</ul>
+		</div>
+		<div class="rhs">
+			<a href="javaScript:void(0);" class="m_sprite btn_fnt" onclick="AddPopup();"></a>
+		</div>
+	</div>
+</header>
+
+<div id="details" class="detailsWarp">
+	<h1>That special sauce: Future Apple products are always bad news</h1>
+	<picture class="hdImg">
+		<source src="http://acdn.newshunt.com/fetchdata13/20170522/ibtimes/allnews/images/400x400_IMAGE67943044.webp" />
+		<img src="http://acdn.newshunt.com/fetchdata13/20170522/ibtimes/allnews/images/400x400_IMAGE67943044.jpg" alt="" />
+	</picture>
+	<article>
+		<div class="srcShare">
+			<div class="src">
+				<picture class="logo">
+					<source src="http://acdn.newshunt.com/npfamily/newlogos/indiatoday/newspapers/indiatoday/images/96x96_paper1.webp" />
+					<img src="http://acdn.newshunt.com/npfamily/newlogos/indiatoday/newspapers/indiatoday/images/96x96_paper1.webp" alt="" />
+				</picture>
+				<div class="info">
+					<span>india today</span>
+					<em>india</em>
+				</div>
+			</div>
+			<div class="share">
+				<ul>
+					<li><a href="javaScript:void(0);" class="m_sprite icn_fb"></a></li>
+					<li><a href="javaScript:void(0);" class="m_sprite icn_whatsapp"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dt">Thursday, 02 Feb, 10:30am</div>
+		<div class="data">
+			<p>Apple is expected to announce new things at WWDC next month so, quick, to the “Why you will hate Apple’s WWDC announcements” machine! Writing for the Forbes contributor network and large animal husbandry research center, Curtis Silver has read Bloomberg’s report on Apple’s supposed plans for laptop announcements for you! So convenient!<br><br>
+			"Apple May Announce Immediately Outdated MacBooks Next Month At WWDC." (Tip o’ the antlers to Philip Speicher.)<br><br>
+			Why read Bloomberg when you can read Forbes and… uh… and… uhhhh… ummm…<br><br>
+			Uh, the Macalope has really nothing there. He started typing that sentence thinking he’d surely think of something by the end of it but, nope.<br><br>
+			Seems like the kind of thing you’d edit out, right? And, yet, here’s the Macalope still typing and just leaving it sitting up there. Very strange.</p>
+		</div>
+		<div class="dot-loader">
+		  <div class="dot-loader-inner">
+		    <label>	● </label>
+		    <label>	● </label>
+		    <label>	● </label>
+		    <label>	● </label>
+		  </div>
+			<p>Please wait content fetching</p>
+		</div>
+	</article>
+
+	<div class="related">
+		<h3>related</h3>
+		<ul class="dh-list-item">
+			<li class="ripWap">
+				<picture>
+					<source src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.webp" />
+					<img src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.jpg" alt="" />
+				</picture>
+				<div class="list-content">
+					<h2>Baahubali 2: SS Rajamouli film creates Rs 1500-crore club </h2>
+					<div class="srcInfo">
+						<span>india today</span>
+						<em>25 min</em>
+					</div>
+				</div>
+			</li>
+			<li class="ripWap">
+				<picture>
+					<source src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.webp" />
+					<img src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.jpg" alt="" />
+				</picture>
+				<div class="list-content">
+					<h2>Baahubali 2: SS Rajamouli film creates Rs 1500-crore club </h2>
+					<div class="srcInfo">
+						<span>india today</span>
+						<em>25 min</em>
+					</div>
+				</div>
+			</li>
+			<li class="ripWap">
+				<picture>
+					<source src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.webp" />
+					<img src="http://acdn.newshunt.com/fetchdata13/20170519/hans/cinema/images/400x400_IMAGE67842636.jpg" alt="" />
+				</picture>
+				<div class="list-content">
+					<h2>Baahubali 2: SS Rajamouli film creates Rs 1500-crore club </h2>
+					<div class="srcInfo">
+						<span>india today</span>
+						<em>25 min</em>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<a href="javaScript:void(0);" class="btnNativeShare m_sprite icn_native_share"></a>
+</div>
+<script src="js/template.js"></script>
+
+<script type="text/javascript">
+
+//popup Addition
+	function AddPopup(){
+		if(document.getElementById('popup').style.display =='none'){
+			document.getElementById('popup').style.display='block';
+		}
+	}
+
+//close Button
+	function closeBtn(){
+		if(document.getElementById('popup').style.display =='block')
+			document.getElementById('popup').style.display='none';
+	}
+
+//font size changes
+function addClassBody(){
+	var textSizeWrap = document.getElementById("line");
+	var textSizeBtn = document.getElementsByClassName("pipe");
+	//console.log(textSizeWrap);
+	//console.log(textSizeBtn);
+	for(i=0;i<textSizeBtn.length;i++){
+		textSizeBtn[i].addEventListener("click", changeTextSize);
+	}
+	function changeTextSize(){
+		//console.log(this);
+		
+		var childSpan = this.getElementsByTagName("span")[0];
+		addClass("active",childSpan);
+		removeSiblingClass(this);
+		lineControl(this);	
+	}
+	function createCookie(e, s) {
+    var t = new Date;
+    t.setTime(t.getTime() + 2592e6);
+    var a = "; expires=" + t.toGMTString();
+    document.cookie = e + "=" + s + a + ";path=/";
+}
+
+	function lineControl(ele){
+		var selEle1 = ele.classList.contains('styI');
+		var selEle2 = ele.classList.contains('styII');
+		var selEle3 = ele.classList.contains('styIII');
+		var textSizeWrap = document.getElementById("line");
+		if(selEle1){
+			textSizeWrap.getElementsByClassName("st2")[0].style.display="none";
+			textSizeWrap.getElementsByClassName("st3")[0].style.display="none";
+			document.getElementById('fontMod').classList.add('fontStyl1');
+			document.getElementById('fontMod').classList.remove('fontStyl2');
+			document.getElementById('fontMod').classList.remove('fontStyl3');
+			document.getElementById('bodySize').classList.add('fntSty1');
+			document.getElementById('bodySize').classList.remove('fntSty2');	
+			document.getElementById('bodySize').classList.remove('fntSty3');
+			createCookie('fsize', 'styI');			
+		}
+		else if (selEle2) {
+			textSizeWrap.getElementsByClassName("st2")[0].style.display="block";
+			textSizeWrap.getElementsByClassName("st3")[0].style.display="none";
+			document.getElementById('fontMod').classList.add('fontStyl2');
+			document.getElementById('fontMod').classList.remove('fontStyl1');
+			document.getElementById('fontMod').classList.remove('fontStyl3');
+			document.getElementById('bodySize').classList.add('fntSty2');
+			document.getElementById('bodySize').classList.remove('fntSty1');	
+			document.getElementById('bodySize').classList.remove('fntSty3');
+			createCookie('fsize', 'styII');	
+		}else if(selEle3){
+			textSizeWrap.getElementsByClassName("st2")[0].style.display="none";
+			textSizeWrap.getElementsByClassName("st3")[0].style.display="block";
+			document.getElementById('fontMod').classList.add('fontStyl3');
+			document.getElementById('fontMod').classList.remove('fontStyl1');
+			document.getElementById('fontMod').classList.remove('fontStyl2');
+			document.getElementById('bodySize').classList.add('fntSty3');
+			document.getElementById('bodySize').classList.remove('fntSty1');	
+			document.getElementById('bodySize').classList.remove('fntSty2');
+			createCookie('fsize', 'styIII');	
+		}	
+	}
+	function removeSiblingClass(ele){
+		var t = getSiblings(ele);
+		for(i=0;i<t.length;i++){
+			var ele = t[i];
+			var selEle = ele.classList.contains('pipe');
+			var tarEle = ele.getElementsByTagName('span')[0];
+			selEle && removeClass("active",tarEle);
+		}
+	};
+	function addClass(classname, ele) {
+	    var cn = ele.className;
+	    if( cn.indexOf( classname ) != -1 ) {
+	        return;
+	    }
+	    if( cn != '' ) {
+	        classname = ' '+classname;
+	    }
+	    ele.className = cn+classname;
+	}
+	function removeClass(classname, ele) {
+	    var cn = ele.className;
+	    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
+	    cn = cn.replace( rxp, '' );
+	    ele.className = cn;
+	}
+	function getChildren(n, skipMe,skipClass){
+	    var r = [];
+	    for ( ; n; n = n.nextSibling ) 
+	       if ( n.nodeType == 1 && n != skipMe )
+	          r.push( n );        
+	    return r;
+	};
+	function getSiblings(n,skipClass) {
+	    return getChildren(n.parentNode.firstChild, n);
+	}
+}
+//save Button
+function save(){
+	document.getElementById('popup').style.display = 'none';
+	function fsize(size,unit,id){
+	  	var vfontsize = document.getElementById('bodySize');
+	  	if(vfontsize){
+		    vfontsize.style.fontSize = size + unit;
+		    createCookie("textsizestyle", textsize, 365);
+	    }
+	}
+
+}
+
+</script>
+</body>
+</html>
